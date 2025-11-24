@@ -12,7 +12,7 @@ db = {
         "id": 2,
         "nome": "João Henrique",
         "email": "joao.email@example.com",
-    }
+    },
 }
 
 

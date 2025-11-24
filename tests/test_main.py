@@ -30,15 +30,12 @@ def test_criar_aluno_dados_incompletos():
 
 @pytest.mark.xfail(reason="Este teste demonstra uma falha esperada.")
 def test_criar_aluno_sem_campo_obrigatorio():
-    response = client.post(
-        "/alunos",
-        json={"email": "semnome@example.com"},
-    )
+    response = client.post("/alunos", json={"email": "semnome@example.com"})
     assert response.status_code == 422
     assert "Campo 'nome' é obrigatório" in response.json()["detail"]
 
-# Novos Testes
 
+# Novos Testes
 def test_get_existing_aluno():
     aluno_id = 1
     response = client.get(f"/alunos/{aluno_id}")
@@ -47,9 +44,10 @@ def test_get_existing_aluno():
         "aluno": {
             "id": 1,
             "nome": "Gabriel Henrique",
-            "email": "gabriel.email@example.com"
+            "email": "gabriel.email@example.com",
         }
     }
+
 
 def test_get_notexisting_aluno():
     aluno_id = 999
