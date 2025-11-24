@@ -1,0 +1,25 @@
+env/
+ehthumbs.db
+# Basic .gitignore for this FastAPI Python project
+
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+
+# Environment variables
+.env
+
+# Pytest cache
+.pytest_cache/
+
+# IDE/editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
