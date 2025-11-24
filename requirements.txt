@@ -5,6 +5,3 @@ flake8
 requests
 pytest-mock
 pytest-cov
-uvicorn
-httpx
-pytest-asyncio
