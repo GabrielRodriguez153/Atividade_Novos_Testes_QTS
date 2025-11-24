@@ -29,7 +29,3 @@ jobs:
           source venv/bin/activate
           pip install pytest
           pytest
-
-      - name: Test coverage
-        run: |
-          python -m pytest --cov=app
