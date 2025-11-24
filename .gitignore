@@ -5,6 +5,7 @@ ehthumbs.db
 # Byte-compiled files
 __pycache__/
 *.py[cod]
+.coverage
 
 # Virtual environments
 venv/
